@@ -1,0 +1,76 @@
+CREATE DATABASE dbService;
+
+USE dbService;
+
+/* Service Table  */
+--------------------
+ 
+CREATE TABLE tblService
+(
+serviceID int AUTO_INCREMENT PRIMARY KEY,
+serviceName varchar(255),
+parentServiceID int,
+serviceIconPath varchar(255),
+serviceStatus varchar(5),
+serviceItemDisplayPosition int,
+ServiceValidPeriod int
+);
+
+/* Service Config Table  */
+---------------------------
+
+CREATE TABLE tblServiceConfig
+(
+serviceId int PRIMARY KEY,
+fieldName1 varchar(255),
+fieldName2 varchar(255),
+fieldName3 varchar(255),
+fieldName4 varchar(255),
+fieldName5 varchar(255),
+fieldName6 varchar(255),
+fieldName7 varchar(255),
+fieldName8 varchar(255),
+fieldName9 varchar(255),
+fieldName10 varchar(255)
+);
+
+/* Service Data Table  */
+-------------------------
+
+CREATE TABLE tblServiceData
+(
+serviceID int ,
+userName varchar(255),
+mobileNumber varchar(15) NOT NULL,
+emailId varchar(100),
+address varchar(255) NOT NULL,
+city varchar(25) NOT NULL,
+latitude FLOAT (10,6) NOT NULL,
+longitude FLOAT (10,6) NOT NULL,
+fieldName1 varchar(255),
+fieldName2 varchar(255),
+fieldName3 varchar(255),
+fieldName4 varchar(255),
+fieldName5 varchar(255),
+fieldName6 varchar(255),
+fieldName7 varchar(255),
+fieldName8 varchar(255),
+fieldName9 varchar(255),
+fieldName10 varchar(255),
+userStatus int NOT NULL,
+approval int NOT NULL ,
+registrationDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+keyValues varchar(255),
+PRIMARY KEY (serviceID, mobileNumber)
+);
+
+/* Labels Table  */
+--------------------
+
+CREATE TABLE tblLabels
+(
+labelId int,
+label varchar(50), 
+labelDetails varchar(50) 
+);
+
