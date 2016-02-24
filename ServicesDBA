@@ -85,5 +85,5 @@ ipAddress varchar(50),
 feedbackDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
-Completed Tables Creation
+Completed Tables Creations
 
