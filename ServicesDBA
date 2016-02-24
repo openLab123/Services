@@ -74,3 +74,14 @@ label varchar(50),
 labelDetails varchar(50) 
 );
 
+/* Feedback Table  */
+--------------------
+
+CREATE TABLE tblFeedback
+(
+feedbackId int PRIMARY KEY,
+feedbackDetails varchar(255), 
+ipAddress varchar(50), 
+feedbackDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
