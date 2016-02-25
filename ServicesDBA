@@ -12,7 +12,7 @@ serviceName varchar(255),
 parentServiceID int,
 serviceIconPath varchar(255),
 serviceStatus varchar(5),
-serviceItemDisplayPosition int,
+serviceIconDisplayPosition int,
 ServiceValidPeriod varchar(30)
 );
 
