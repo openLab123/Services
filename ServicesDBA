@@ -1,25 +1,3 @@
-CREATE DATABASE dbService;
-
-USE dbService;
-
-/* Service Table  */
---------------------
- 
-CREATE TABLE tblService
-(
-serviceID int AUTO_INCREMENT PRIMARY KEY,
-serviceName varchar(255),
-parentServiceID int,
-serviceIconPath varchar(255),
-serviceStatus varchar(5),
-serviceItemDisplayPosition int,
-ServiceValidPeriod int,
-markerExpression varchar(255)
-);
-
-/* Service Config Table  */
----------------------------
-
 CREATE TABLE tblServiceConfig
 (
 serviceId int,
@@ -33,61 +11,6 @@ fieldName7 varchar(255),
 fieldName8 varchar(255),
 fieldName9 varchar(255),
 fieldName10 varchar(255),
+markerExpression varchar(255),
 FOREIGN KEY(serviceId) REFERENCES tblService(serviceId)
 );
-
-/* Service Data Table  */
--------------------------
-
-CREATE TABLE tblServiceData
-(
-serviceID int ,
-userName varchar(255),
-mobileNumber varchar(15) NOT NULL,
-emailId varchar(100),
-address varchar(255) NOT NULL,
-city varchar(25) NOT NULL,
-latitude DEC (24,20) NOT NULL,
-longitude DEC (24,20) NOT NULL,
-fieldName1 varchar(255),
-fieldName2 varchar(255),
-fieldName3 varchar(255),
-fieldName4 varchar(255),
-fieldName5 varchar(255),
-fieldName6 varchar(255),
-fieldName7 varchar(255),
-fieldName8 varchar(255),
-fieldName9 varchar(255),
-fieldName10 varchar(255),
-userStatus int NOT NULL,
-approval int NOT NULL ,
-registrationDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-keyValues varchar(255),
-PRIMARY KEY (serviceID, mobileNumber)
-);
-
-/* Feedback Table  */
---------------------
-
-CREATE TABLE tblFeedback
-(
-feedbackId int PRIMARY KEY,
-feedbackDetails varchar(255), 
-ipAddress varchar(50), 
-feedbackDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
-
-
-/* Labels Table  */
---------------------
-
-CREATE TABLE tblLabel
-(
-labelId int,
-label varchar(50), 
-labelDetails varchar(50) 
-);
-
-
-HardikSeva.Com
-myneedyservices
