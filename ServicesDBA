@@ -13,7 +13,8 @@ parentServiceID int,
 serviceIconPath varchar(255),
 serviceStatus varchar(5),
 serviceItemDisplayPosition int,
-ServiceValidPeriod int
+ServiceValidPeriod int,
+markerExpression varchar(255)
 );
 
 /* Service Config Table  */
@@ -64,16 +65,6 @@ keyValues varchar(255),
 PRIMARY KEY (serviceID, mobileNumber)
 );
 
-/* Labels Table  */
---------------------
-
-CREATE TABLE tblLabels
-(
-labelId int,
-label varchar(50), 
-labelDetails varchar(50) 
-);
-
 /* Feedback Table  */
 --------------------
 
@@ -86,3 +77,12 @@ feedbackDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
 
+/* Labels Table  */
+--------------------
+
+CREATE TABLE tblLabel
+(
+labelId int,
+label varchar(50), 
+labelDetails varchar(50) 
+);
