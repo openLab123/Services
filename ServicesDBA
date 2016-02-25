@@ -22,7 +22,7 @@ markerExpression varchar(255)
 
 CREATE TABLE tblServiceConfig
 (
-serviceId int PRIMARY KEY,
+serviceId int,
 fieldName1 varchar(255),
 fieldName2 varchar(255),
 fieldName3 varchar(255),
@@ -32,7 +32,8 @@ fieldName6 varchar(255),
 fieldName7 varchar(255),
 fieldName8 varchar(255),
 fieldName9 varchar(255),
-fieldName10 varchar(255)
+fieldName10 varchar(255),
+FOREIGN KEY(serviceId) REFERENCES tblService(serviceId)
 );
 
 /* Service Data Table  */
@@ -86,3 +87,7 @@ labelId int,
 label varchar(50), 
 labelDetails varchar(50) 
 );
+
+
+HardikSeva.Com
+myneedyservices
