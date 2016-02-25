@@ -13,7 +13,7 @@ parentServiceID int,
 serviceIconPath varchar(255),
 serviceStatus varchar(5),
 serviceItemDisplayPosition int,
-ServiceValidPeriod int
+ServiceValidPeriod varchar(30)
 );
 
 /* Service Config Table  */
