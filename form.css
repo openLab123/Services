@@ -1,0 +1,29 @@
+<style type="text/css">
+    input[type='number'] { width:250px; height: 20px; font-style: oblique; text-align: center}
+    input[type='text'] { width:250px; height: 20px; font-style: oblique; text-align: center}
+    input[type='button'] {width: 150px; height: 20px; color: green ;font-style: oblique;text-align: center}
+    button[type='button'] {width: 150px; height: 20px; color: green ;font-style: oblique;text-align: center}
+    label[for='servicename']{font-style: oblique;}
+    label[for='parentid']{font-style: oblique;}
+    label[for='path']{font-style: oblique;}
+    label[for='status']{font-style: oblique;}
+    label[for='position']{font-style: oblique;}
+    label[for='validation']{font-style: oblique;}
+
+
+</style>
+
+<style type="text/css">
+
+label{
+display:inline-block;
+width:200px;
+margin-right:30px;
+text-align:right;
+}
+fieldset{
+border:none;
+width:500px;
+margin:5px auto;
+}
+</style>
