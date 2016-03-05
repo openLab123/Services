@@ -1,0 +1,6 @@
+Pending Tasks:-
+===============
+
+1) Create a Trigger (beforeServiceIconDisplayPositionInsert) on tblService to update a serviceIconDisplayPosition based on serviceID and parentServiceID.
+
+2) Create a dropdownList to display the records based on both status(Active/Hide) and orderby (serviceIconDisplayPosition).
