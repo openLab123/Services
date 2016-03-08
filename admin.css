@@ -1,0 +1,96 @@
+header
+{
+    color: white;
+    font-family: Times New Roman, serif ; 
+    background-color: black;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: 800;
+    padding-right: 10px;
+}
+table, th, td 
+{
+     border: 1px solid black;
+}
+table {
+    border-collapse:collapse;
+    width: auto;
+    color: white;
+}
+
+td {
+    height: 30px;
+    vertical-align: middle;
+    text-align: center;
+
+}
+tr:hover{background-color:grey;}
+th
+{
+    height: 30px;
+    background-color: #4CAF50;
+    color: white;
+
+}
+a
+{
+    color: white;
+}
+
+button[value='Approve']
+{width: 150px; height: 30px; color: green ;font-style: oblique;text-align: center}
+button[value='Suspend']
+{width: 150px; height: 30px; color: red ;font-style: oblique;text-align: center}
+button[value='showdata'] 
+{width: 150px; height: 30px; color: green ;font-style: oblique;text-align: center}
+input[type="button"] 
+{width: 150px; height: 30px; color: green ;font-style: oblique;text-align: center}
+    select
+     {width: 150px; height: 30px; color: green ;font-style: oblique;text-align: center} 
+input[type='number'] 
+{ width:250px; height: 30px; font-style: oblique; text-align: center}
+input[type='text'] 
+{ width:250px; height: 30px; font-style: oblique; text-align: center}
+button[type="button"] 
+{width: 150px; height: 30px; color: green ;font-style: oblique;text-align: center}
+label[for='servicename']
+{font-style: oblique; color: gree}
+label[for='parentid']
+{font-style: oblique;}
+label[for='path']
+{font-style: oblique;}
+label[for='status']
+{font-style: oblique;}
+label[for='position']
+{font-style: oblique;}
+label[for='validation']
+{font-style: oblique;}
+
+label
+{
+    color: white;
+display:inline-block;
+width:200px;
+margin-right:30px;
+text-align:right;
+text-decoration-color: green;
+}
+fieldset
+{
+border:0;
+width:500px;
+margin:5px auto;
+}
+fieldset {
+padding: 1em;
+font:80%/1 sans-serif;
+}
+
+body
+{
+    /*opacity: 0.1%;*/
+    background: url("adminbackground.jpg");
+    background-repeat: no-repeat;
+    background-position: fill;
+    background-size: 100%;
+}
