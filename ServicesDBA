@@ -88,6 +88,8 @@ label varchar(50),
 labelDetails varchar(50) 
 );
 
+create table tblErrorLog(Id int(110) AUTO_INCREMENT PRIMARY KEY, ErrorLog varchar(550), DateTime TIMESTAMP DEFAULT CURRENT_TIMESTAMP, DeviceDetails varchar(220)) 
+
 ==========
 Function:-
 ==========
