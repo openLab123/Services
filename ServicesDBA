@@ -22,16 +22,16 @@ serviceValidPeriod int
 CREATE TABLE tblServiceConfig
 (
 serviceID int,
-fieldValue1 varchar(255),
-fieldValue2 varchar(255),
-fieldValue3 varchar(255),
-fieldValue4 varchar(255),
-fieldValue5 varchar(255),
-fieldValue6 varchar(255),
-fieldValue7 varchar(255),
-fieldValue8 varchar(255),
-fieldValue9 varchar(255),
-fieldValue10 varchar(255),
+fieldName1 varchar(255),
+fieldName2 varchar(255),
+fieldName3 varchar(255),
+fieldName4 varchar(255),
+fieldName5 varchar(255),
+fieldName6 varchar(255),
+fieldName7 varchar(255),
+fieldName8 varchar(255),
+fieldName9 varchar(255),
+fieldName10 varchar(255),
 markerExpression varchar(255),
 FOREIGN KEY(serviceID) REFERENCES tblService(serviceID)
 );
